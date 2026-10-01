@@ -1,8 +1,9 @@
 import { Component, signal } from '@angular/core';
-import { RouterOutlet } from '@angular/router';
+import { Calculadora } from './calculadora/calculadora';
 
 @Component({
-  imports: [RouterOutlet],
+  standalone: true,
+  imports: [Calculadora],
   selector: 'app-root',
   styleUrl: './app.scss',
   templateUrl: './app.html',
