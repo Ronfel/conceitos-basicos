@@ -41,7 +41,7 @@ input:focus {
     border-color: #0056b3;
 }
 
-button {
+button[type="submit"] {
     padding: 10px 20px;
     background-color: #007bff;
     color: white;
@@ -51,8 +51,21 @@ button {
     font-size: 16px;
 }
 
-button:hover {
+button[type="submit"]:hover {
     background-color: #0056b3;
+}
+button[type="button"] {
+    padding: 10px 20px;
+    background-color: #dc3545;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+button[type="button"]:hover {
+    background-color: #c82333;
 }
 
 table {
@@ -68,12 +81,15 @@ thead {
 
 th{
     background-color: #007bff;
-}
-
-th, td {
     padding: 12px;
     text-align: center;
-    border-bottom: 1px solid #ddd;
+    border: 1px solid #ddd;    
+}
+
+td {
+    padding: 12px;
+    text-align: center;
+    border: 1px solid #ddd;
 }
 
 tr:nth-child(odd) {
@@ -87,4 +103,9 @@ tr:nth-child(even) {
 input[type="checkbox"] {
     transform: scale(1.2);
     cursor: pointer;
+}
+
+.item-comprado {
+    text-decoration: line-through;
+    color: #888;
 }
